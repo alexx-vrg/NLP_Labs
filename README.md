@@ -9,7 +9,7 @@ NLP_Labs/
 ├── Lab2_Intro_to_maths_optimisation/
 ├── Lab3_Transformer_Introduction/
 ├── Lab4_Transformer_Classification/
-├── Lab5_Text_Classification/
+├── Lab5_Clustering/
 ├── Lab6_Finetune_llama/
 ├── Lab7_Prompting_LangChain_Ollama/
 └── README.md
@@ -42,14 +42,16 @@ End-to-end pipeline for training transformers on emotion classification:
 - Training a classifier on extracted embeddings
 - Fine-tuning with Hugging Face Trainer API
 
-### Lab 5 - Text Classification with Generative Models
+### Lab 5 - Clustering and Topic Modeling
 
-Comparing different approaches to text classification:
+Text clustering and topic modeling on ArXiv NLP abstracts:
 
-- **Task-specific models** - Pre-trained RoBERTa for sentiment
-- **Supervised embeddings** - Sentence-transformers + Logistic Regression
-- **Zero-shot classification** - Label embeddings with cosine similarity
-- **Generative models** - FLAN-T5 for prompt-based classification
+- **Embeddings** - SentenceTransformer (gte-small)
+- **Dimensionality Reduction** - UMAP
+- **Clustering** - HDBSCAN
+- **Topic Modeling** - BERTopic with c-TF-IDF
+- **Representation Models** - KeyBERT, MMR
+- **LLM Topic Labels** - Groq API integration
 
 ### Lab 6 - Fine-tuning Llama 3.2
 
@@ -62,7 +64,7 @@ Fine-tuning a large language model on a medical Q&A dataset:
 
 ### Lab 7 - Prompting with LangChain & Ollama
 
-_Empty for now_
+_(Instructions pending)_
 
 ## Setup
 
